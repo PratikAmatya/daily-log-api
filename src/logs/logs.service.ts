@@ -38,7 +38,7 @@ export class LogsService {
     });
     return {
       status: 'sucess',
-      data: user.logs,
+      data: user.logs.reverse(),
     };
   }
 }

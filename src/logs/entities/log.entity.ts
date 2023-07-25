@@ -13,8 +13,8 @@ import { User } from '../../users/entities/user.entity';
 
 @Entity()
 export class Log {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+  @PrimaryGeneratedColumn('increment')
+  id: number;
 
   @Column()
   description: string;
